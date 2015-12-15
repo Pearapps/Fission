@@ -41,4 +41,13 @@ final class FountainTests: XCTestCase {
         XCTAssert(other == flatMapped)
     }
     
+    func testFunctionApplication() {
+        func function(string: String) -> Int {
+            return 22
+        }
+        
+        let result = "hello" |> function
+        XCTAssert(result == 22)
+    }
+    
 }
