@@ -20,3 +20,8 @@ infix operator |> {
     associativity left
     precedence 95
 }
+
+infix operator <| {
+    associativity left
+    precedence 95
+}

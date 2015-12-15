@@ -22,8 +22,6 @@ final class FountainTests: XCTestCase {
         let mapped = array.map(function)
         
         let other = function <^> array
-        
-        
     }
     
     func testFlatMap() {
@@ -47,6 +45,15 @@ final class FountainTests: XCTestCase {
         }
         
         let result = "hello" |> function
+        XCTAssert(result == 22)
+    }
+    
+    func testFunctionApplicationTwo() {
+        func function(string: String) -> Int {
+            return 22
+        }
+        
+        let result = function <| "hello"
         XCTAssert(result == 22)
     }
     
