@@ -10,7 +10,20 @@
 		B93D3C4F1C1FD5F200557F6F /* Fountain.h in Headers */ = {isa = PBXBuildFile; fileRef = B93D3C4E1C1FD5F200557F6F /* Fountain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B93D3C571C1FD61500557F6F /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93D3C561C1FD61500557F6F /* Operators.swift */; };
 		B93D3C591C1FD69D00557F6F /* CollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93D3C581C1FD69D00557F6F /* CollectionType.swift */; };
+		B93D3C611C1FD81B00557F6F /* FountainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93D3C601C1FD81B00557F6F /* FountainTests.swift */; };
+		B93D3C631C1FD81B00557F6F /* Fountain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B93D3C4B1C1FD5F200557F6F /* Fountain.framework */; };
+		B93D3C6E1C1FE74900557F6F /* Sequencetype.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93D3C6D1C1FE74900557F6F /* Sequencetype.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B93D3C641C1FD81B00557F6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B93D3C421C1FD5F200557F6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B93D3C4A1C1FD5F200557F6F;
+			remoteInfo = Fountain;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B93D3C4B1C1FD5F200557F6F /* Fountain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fountain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -18,6 +31,10 @@
 		B93D3C501C1FD5F200557F6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B93D3C561C1FD61500557F6F /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		B93D3C581C1FD69D00557F6F /* CollectionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionType.swift; sourceTree = "<group>"; };
+		B93D3C5E1C1FD81B00557F6F /* FountainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FountainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B93D3C601C1FD81B00557F6F /* FountainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FountainTests.swift; sourceTree = "<group>"; };
+		B93D3C621C1FD81B00557F6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B93D3C6D1C1FE74900557F6F /* Sequencetype.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sequencetype.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +45,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B93D3C5B1C1FD81B00557F6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B93D3C631C1FD81B00557F6F /* Fountain.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -35,6 +60,7 @@
 			isa = PBXGroup;
 			children = (
 				B93D3C4D1C1FD5F200557F6F /* Fountain */,
+				B93D3C5F1C1FD81B00557F6F /* FountainTests */,
 				B93D3C4C1C1FD5F200557F6F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				B93D3C4B1C1FD5F200557F6F /* Fountain.framework */,
+				B93D3C5E1C1FD81B00557F6F /* FountainTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -53,9 +80,19 @@
 				B93D3C4E1C1FD5F200557F6F /* Fountain.h */,
 				B93D3C561C1FD61500557F6F /* Operators.swift */,
 				B93D3C581C1FD69D00557F6F /* CollectionType.swift */,
+				B93D3C6D1C1FE74900557F6F /* Sequencetype.swift */,
 				B93D3C501C1FD5F200557F6F /* Info.plist */,
 			);
 			path = Fountain;
+			sourceTree = "<group>";
+		};
+		B93D3C5F1C1FD81B00557F6F /* FountainTests */ = {
+			isa = PBXGroup;
+			children = (
+				B93D3C601C1FD81B00557F6F /* FountainTests.swift */,
+				B93D3C621C1FD81B00557F6F /* Info.plist */,
+			);
+			path = FountainTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -90,16 +127,38 @@
 			productReference = B93D3C4B1C1FD5F200557F6F /* Fountain.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		B93D3C5D1C1FD81B00557F6F /* FountainTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B93D3C661C1FD81B00557F6F /* Build configuration list for PBXNativeTarget "FountainTests" */;
+			buildPhases = (
+				B93D3C5A1C1FD81B00557F6F /* Sources */,
+				B93D3C5B1C1FD81B00557F6F /* Frameworks */,
+				B93D3C5C1C1FD81B00557F6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B93D3C651C1FD81B00557F6F /* PBXTargetDependency */,
+			);
+			name = FountainTests;
+			productName = FountainTests;
+			productReference = B93D3C5E1C1FD81B00557F6F /* FountainTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		B93D3C421C1FD5F200557F6F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Kenneth Ackerson";
 				TargetAttributes = {
 					B93D3C4A1C1FD5F200557F6F = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					B93D3C5D1C1FD81B00557F6F = {
 						CreatedOnToolsVersion = 7.2;
 					};
 				};
@@ -117,12 +176,20 @@
 			projectRoot = "";
 			targets = (
 				B93D3C4A1C1FD5F200557F6F /* Fountain */,
+				B93D3C5D1C1FD81B00557F6F /* FountainTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B93D3C491C1FD5F200557F6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B93D3C5C1C1FD81B00557F6F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -137,11 +204,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				B93D3C571C1FD61500557F6F /* Operators.swift in Sources */,
+				B93D3C6E1C1FE74900557F6F /* Sequencetype.swift in Sources */,
 				B93D3C591C1FD69D00557F6F /* CollectionType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B93D3C5A1C1FD81B00557F6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B93D3C611C1FD81B00557F6F /* FountainTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B93D3C651C1FD81B00557F6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B93D3C4A1C1FD5F200557F6F /* Fountain */;
+			targetProxy = B93D3C641C1FD81B00557F6F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		B93D3C511C1FD5F200557F6F /* Debug */ = {
@@ -269,6 +353,28 @@
 			};
 			name = Release;
 		};
+		B93D3C671C1FD81B00557F6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FountainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pear.FountainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B93D3C681C1FD81B00557F6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FountainTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pear.FountainTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -286,6 +392,14 @@
 			buildConfigurations = (
 				B93D3C541C1FD5F200557F6F /* Debug */,
 				B93D3C551C1FD5F200557F6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B93D3C661C1FD81B00557F6F /* Build configuration list for PBXNativeTarget "FountainTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B93D3C671C1FD81B00557F6F /* Debug */,
+				B93D3C681C1FD81B00557F6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

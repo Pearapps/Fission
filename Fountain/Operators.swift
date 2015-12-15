@@ -8,12 +8,15 @@
 
 infix operator <^> {
     associativity left
-
     precedence 130
 }
 
 infix operator >>- {
-associativity left
+    associativity left
+    precedence 110
+}
 
-precedence 110
+infix operator |> {
+    associativity left
+    precedence 95
 }

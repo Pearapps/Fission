@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>FountainTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>B93D3C4A1C1FD5F200557F6F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B93D3C5D1C1FD81B00557F6F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
