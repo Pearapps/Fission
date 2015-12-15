@@ -6,16 +6,16 @@
 //  Copyright © 2015 Kenneth Ackerson. All rights reserved.
 //
 
-func curry<A, B, C>(f: (A, B) -> C) -> A -> B -> C {
-    return { a in
-        return { b in
-            return f(a, b)
+func curry<T, U, V>(f: (T, U) -> V) -> T -> U -> V {
+    return { x in
+        return {
+            return f <| (x, $0)
         }
     }
 }
 
-func uncurry<A, B, C>(f: A -> B -> C) -> (A, B) -> C {
-    return { a, b in
-        return f(a)(b)
+func uncurry<T, U, V>(f: T -> U -> V) -> (T, U) -> V {
+    return {
+        return f <| $0 <| $1
     }
 }

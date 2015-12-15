@@ -36,3 +36,8 @@ infix operator >>> {
     precedence 175
 }
 
+infix operator <<< {
+    associativity right
+    precedence 175
+}
+
