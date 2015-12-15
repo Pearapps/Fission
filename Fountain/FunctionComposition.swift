@@ -6,11 +6,8 @@
 //  Copyright © 2015 Kenneth Ackerson. All rights reserved.
 //
 
-func >>> <A, B, C>(lhs: B -> C, rhs: A -> B) -> A -> C {
+public func >>> <A, B, C>(lhs: A -> B, rhs: B -> C) -> A -> C {
     return {
-        lhs(rhs($0))
+        return $0 |> lhs |> rhs
     }
 }
-
-
-

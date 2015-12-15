@@ -57,4 +57,18 @@ final class FountainTests: XCTestCase {
         XCTAssert(result == 22)
     }
     
+    func testFunctionComposition() {
+        func timesThree(amount: Int) -> Int {
+            return amount * 3
+        }
+        
+        func count(string: String) -> Int {
+            return string.characters.count
+        }
+        
+        let m = count >>> timesThree >>> { return [$0] } >>> { return $0.reduce(0, combine: +) }
+        
+        XCTAssert(m("hi") == 6)
+    }
+    
 }
