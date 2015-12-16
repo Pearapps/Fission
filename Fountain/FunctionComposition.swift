@@ -7,7 +7,7 @@
 //
 
 /**
-Function composostion operator
+Function composostion operator.
 
 - parameter lhs: The function on the left hand side of this operator. First function to be composed.
 - parameter rhs: The function on the right hand side of this operator. Second function to be composed.
@@ -21,7 +21,7 @@ public func >>> <T, U, V>(lhs: T -> U, rhs: U -> V) -> T -> V {
 }
 
 /**
- Function composostion operator
+ Function composostion operator.
  
  - parameter lhs: The function on the left hand side of this operator. First function to be composed.
  - parameter rhs: The function on the right hand side of this operator. Second function to be composed.
