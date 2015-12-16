@@ -24,6 +24,8 @@
 		B93D3C901C20F5C200557F6F /* FunctionApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93D3C711C1FE82400557F6F /* FunctionApplication.swift */; };
 		B93D3C911C20F5C200557F6F /* CollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93D3C581C1FD69D00557F6F /* CollectionType.swift */; };
 		B93D3C921C20F5C200557F6F /* Sequencetype.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93D3C6D1C1FE74900557F6F /* Sequencetype.swift */; };
+		B93D3C941C20F7B400557F6F /* Mutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93D3C931C20F7B400557F6F /* Mutation.swift */; };
+		B93D3C951C20F7B400557F6F /* Mutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93D3C931C20F7B400557F6F /* Mutation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,7 @@
 		B93D3C7E1C20F42D00557F6F /* FountainiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FountainiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B93D3C881C20F4CE00557F6F /* Fountain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fountain.h; sourceTree = "<group>"; };
 		B93D3C891C20F4CE00557F6F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B93D3C931C20F7B400557F6F /* Mutation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mutation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,7 @@
 			children = (
 				B93D3C561C1FD61500557F6F /* Operators.swift */,
 				B93D3C771C20019500557F6F /* Optional.swift */,
+				B93D3C931C20F7B400557F6F /* Mutation.swift */,
 				B93D3C731C1FEA6100557F6F /* FunctionComposition.swift */,
 				B93D3C751C1FEB8800557F6F /* Curry.swift */,
 				B93D3C711C1FE82400557F6F /* FunctionApplication.swift */,
@@ -278,6 +282,7 @@
 			files = (
 				B93D3C571C1FD61500557F6F /* Operators.swift in Sources */,
 				B93D3C761C1FEB8800557F6F /* Curry.swift in Sources */,
+				B93D3C941C20F7B400557F6F /* Mutation.swift in Sources */,
 				B93D3C6E1C1FE74900557F6F /* Sequencetype.swift in Sources */,
 				B93D3C781C20019500557F6F /* Optional.swift in Sources */,
 				B93D3C721C1FE82400557F6F /* FunctionApplication.swift in Sources */,
@@ -300,6 +305,7 @@
 			files = (
 				B93D3C8C1C20F5C200557F6F /* Operators.swift in Sources */,
 				B93D3C8D1C20F5C200557F6F /* Optional.swift in Sources */,
+				B93D3C951C20F7B400557F6F /* Mutation.swift in Sources */,
 				B93D3C8E1C20F5C200557F6F /* FunctionComposition.swift in Sources */,
 				B93D3C8F1C20F5C200557F6F /* Curry.swift in Sources */,
 				B93D3C901C20F5C200557F6F /* FunctionApplication.swift in Sources */,
