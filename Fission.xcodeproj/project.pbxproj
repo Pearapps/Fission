@@ -23,8 +23,10 @@
 		B98C47BC1C21248B003F157C /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98C47AD1C21248B003F157C /* Optional.swift */; };
 		B98C47BD1C21248B003F157C /* SequenceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98C47AE1C21248B003F157C /* SequenceType.swift */; };
 		B98C47BE1C21248B003F157C /* SequenceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98C47AE1C21248B003F157C /* SequenceType.swift */; };
-		B98C47C21C2124F6003F157C /* Fission.h in Headers */ = {isa = PBXBuildFile; fileRef = B98C47C01C2124D4003F157C /* Fission.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B98C47C31C2124FF003F157C /* Fission.h in Headers */ = {isa = PBXBuildFile; fileRef = B98C47C01C2124D4003F157C /* Fission.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B98C47C71C2132E7003F157C /* Fission.h in Headers */ = {isa = PBXBuildFile; fileRef = B98C47C51C2132E7003F157C /* Fission.h */; };
+		B98C47C81C2132E7003F157C /* Fission.h in Headers */ = {isa = PBXBuildFile; fileRef = B98C47C51C2132E7003F157C /* Fission.h */; };
+		B98C47C91C2132E7003F157C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B98C47C61C2132E7003F157C /* Info.plist */; };
+		B98C47CA1C2132E7003F157C /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B98C47C61C2132E7003F157C /* Info.plist */; };
 		B9E5277C1C211B8E00011F20 /* FissionMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9E5277B1C211B8E00011F20 /* FissionMacTests.swift */; };
 		B9E5277E1C211B8E00011F20 /* FissionMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B93D3C4B1C1FD5F200557F6F /* FissionMac.framework */; };
 /* End PBXBuildFile section */
@@ -50,8 +52,8 @@
 		B98C47AC1C21248B003F157C /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		B98C47AD1C21248B003F157C /* Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
 		B98C47AE1C21248B003F157C /* SequenceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SequenceType.swift; sourceTree = "<group>"; };
-		B98C47C01C2124D4003F157C /* Fission.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fission.h; sourceTree = "<group>"; };
-		B98C47C11C2124D4003F157C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B98C47C51C2132E7003F157C /* Fission.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fission.h; sourceTree = "<group>"; };
+		B98C47C61C2132E7003F157C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B9E527791C211B8E00011F20 /* FissionMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FissionMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9E5277B1C211B8E00011F20 /* FissionMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FissionMacTests.swift; sourceTree = "<group>"; };
 		B9E5277D1C211B8E00011F20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,8 +88,8 @@
 		B93D3C411C1FD5F200557F6F = {
 			isa = PBXGroup;
 			children = (
+				B98C47C41C2132E7003F157C /* Supporting Files */,
 				B98C47A61C21248B003F157C /* Fission */,
-				B98C47BF1C2124D4003F157C /* Supporting Files */,
 				B9E5277A1C211B8E00011F20 /* FissionMacTests */,
 				B93D3C4C1C1FD5F200557F6F /* Products */,
 			);
@@ -118,14 +120,13 @@
 			path = Fission;
 			sourceTree = "<group>";
 		};
-		B98C47BF1C2124D4003F157C /* Supporting Files */ = {
+		B98C47C41C2132E7003F157C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B98C47C01C2124D4003F157C /* Fission.h */,
-				B98C47C11C2124D4003F157C /* Info.plist */,
+				B98C47C51C2132E7003F157C /* Fission.h */,
+				B98C47C61C2132E7003F157C /* Info.plist */,
 			);
-			name = "Supporting Files";
-			path = "Fission/Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		B9E5277A1C211B8E00011F20 /* FissionMacTests */ = {
@@ -144,7 +145,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B98C47C21C2124F6003F157C /* Fission.h in Headers */,
+				B98C47C71C2132E7003F157C /* Fission.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,7 +153,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B98C47C31C2124FF003F157C /* Fission.h in Headers */,
+				B98C47C81C2132E7003F157C /* Fission.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B98C47C91C2132E7003F157C /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B98C47CA1C2132E7003F157C /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
