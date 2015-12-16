@@ -32,7 +32,25 @@ It can be pretty hard to see in what way the data is flowing or to reason about 
 
 This makes it clear, from left to right, how your data is flowing.
 
-`<|` is used the same way, except from right to left.
+`<|` can be used the same way, except from right to left.
+
+### `curry`
+
+`curry` transforms a function that takes two arguments into a function that returns another function - both of which take one argument.
+
+This can be useful if you want to partially apply a function that is not already curried. Take for example this function:
+
+`func add(first: Double, second: Double) -> Double { return first + second }`
+
+If you wanted to partially apply this for any reason (maybe you want to pass a function of type `Double -> Double` into a higher order function) you can use the `curry` function as so:
+
+`let curriedAddition = curry(add)(4.0)`
+
+and lets say you called this
+
+`curriedAddition(3.0)` - the result will be `7.0`
+
+`uncurry` works in the opposite way, so if you did `uncurry(curry(add))` - you end up with a function with the same signature as the original `add` function.
 
 ### `applied`
 
