@@ -20,15 +20,15 @@ public func applied<T, U> (transform: inout T -> U -> ()) -> T -> U -> T {
 /**
  Transforms a mutating function and a receiver into a function that returns a value.
  
- This allows you to do things like this
+ This allows you to do things like this:
  
  let appended = Array.appendContentsOf <-> ["first"] <| ["second"]
  // appended is equal to `["first", "second"]`
  
  - parameter f: The mutating func to be applied.
- - parameter t: The reciever of the mutating function
+ - parameter t: The reciever of the mutating function..
  
- - returns: A function that returns
+ - returns: A function that returns a function that can tranform `U` to `T`.
  */
 public func <-><T, U> (f: inout T -> U -> (), t: T) -> U -> T {
     return t |> (applied <| f)
