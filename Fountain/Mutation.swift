@@ -16,3 +16,12 @@ func applied<T, U> (transform: inout T -> U -> ()) -> T -> U -> T {
         }
     }
 }
+
+infix operator <-> {
+    associativity right
+    precedence 170
+}
+
+func <-><T, U>(f: inout T -> U -> (), t: T) -> U -> T {
+    return t |> (applied <| f)
+}
