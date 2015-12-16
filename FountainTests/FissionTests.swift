@@ -1,6 +1,6 @@
 //
-//  FountainTests.swift
-//  FountainTests
+//  FissionTests.swift
+//  FissionTests
 //
 //  Created by Kenneth Parker Ackerson on 12/15/15.
 //  Copyright © 2015 Kenneth Ackerson. All rights reserved.
@@ -9,19 +9,20 @@
 import XCTest
 import Fountain
 
-final class FountainTests: XCTestCase {
+final class FissionTests: XCTestCase {
     
     func testMap() {
-
         let array = ["1", "2"]
         
         func function(string: String) -> Int? {
             return Int(string)
         }
         
-        let mapped = array.map(function)
+        let mapped = array.map(function).flatMap { return $0 }
         
-        let other = function <^> array
+        let other = (function <^> array).flatMap { return $0 }
+        
+        XCTAssert(other == mapped)
     }
     
     func testFlatMap() {
