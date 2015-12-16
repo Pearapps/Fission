@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B93D3C4A1C1FD5F200557F6F"
-               BuildableName = "Fountain.framework"
-               BlueprintName = "Fountain"
+               BlueprintIdentifier = "B93D3C7D1C20F42D00557F6F"
+               BuildableName = "FountainiOS.framework"
+               BlueprintName = "FountainiOS"
                ReferencedContainer = "container:Fountain.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B93D3C4A1C1FD5F200557F6F"
-            BuildableName = "Fountain.framework"
-            BlueprintName = "Fountain"
+            BlueprintIdentifier = "B93D3C7D1C20F42D00557F6F"
+            BuildableName = "FountainiOS.framework"
+            BlueprintName = "FountainiOS"
             ReferencedContainer = "container:Fountain.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B93D3C4A1C1FD5F200557F6F"
-            BuildableName = "Fountain.framework"
-            BlueprintName = "Fountain"
+            BlueprintIdentifier = "B93D3C7D1C20F42D00557F6F"
+            BuildableName = "FountainiOS.framework"
+            BlueprintName = "FountainiOS"
             ReferencedContainer = "container:Fountain.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
