@@ -28,7 +28,7 @@ public func applied<T, U> (transform: inout T -> U -> ()) -> T -> U -> T {
  - parameter f: The mutating func to be applied.
  - parameter t: The reciever of the mutating function
  
- - returns: A function that returns 
+ - returns: A function that returns
  */
 public func <-><T, U>(f: inout T -> U -> (), t: T) -> U -> T {
     return t |> (applied <| f)

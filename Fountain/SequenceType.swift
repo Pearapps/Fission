@@ -1,5 +1,5 @@
 //
-//  Sequencetype.swift
+//  SequenceType.swift
 //  Fission
 //
 //  Created by Kenneth Parker Ackerson on 12/15/15.
