@@ -16,6 +16,7 @@
 		B93D3C721C1FE82400557F6F /* FunctionApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93D3C711C1FE82400557F6F /* FunctionApplication.swift */; };
 		B93D3C741C1FEA6100557F6F /* FunctionComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93D3C731C1FEA6100557F6F /* FunctionComposition.swift */; };
 		B93D3C761C1FEB8800557F6F /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93D3C751C1FEB8800557F6F /* Curry.swift */; };
+		B93D3C781C20019500557F6F /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93D3C771C20019500557F6F /* Optional.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		B93D3C711C1FE82400557F6F /* FunctionApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionApplication.swift; sourceTree = "<group>"; };
 		B93D3C731C1FEA6100557F6F /* FunctionComposition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionComposition.swift; sourceTree = "<group>"; };
 		B93D3C751C1FEB8800557F6F /* Curry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Curry.swift; sourceTree = "<group>"; };
+		B93D3C771C20019500557F6F /* Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				B93D3C4E1C1FD5F200557F6F /* Fountain.h */,
 				B93D3C561C1FD61500557F6F /* Operators.swift */,
+				B93D3C771C20019500557F6F /* Optional.swift */,
 				B93D3C731C1FEA6100557F6F /* FunctionComposition.swift */,
 				B93D3C751C1FEB8800557F6F /* Curry.swift */,
 				B93D3C711C1FE82400557F6F /* FunctionApplication.swift */,
@@ -215,6 +218,7 @@
 				B93D3C571C1FD61500557F6F /* Operators.swift in Sources */,
 				B93D3C761C1FEB8800557F6F /* Curry.swift in Sources */,
 				B93D3C6E1C1FE74900557F6F /* Sequencetype.swift in Sources */,
+				B93D3C781C20019500557F6F /* Optional.swift in Sources */,
 				B93D3C721C1FE82400557F6F /* FunctionApplication.swift in Sources */,
 				B93D3C741C1FEA6100557F6F /* FunctionComposition.swift in Sources */,
 				B93D3C591C1FD69D00557F6F /* CollectionType.swift in Sources */,
@@ -406,6 +410,7 @@
 				B93D3C551C1FD5F200557F6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B93D3C661C1FD81B00557F6F /* Build configuration list for PBXNativeTarget "FountainTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +419,7 @@
 				B93D3C681C1FD81B00557F6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

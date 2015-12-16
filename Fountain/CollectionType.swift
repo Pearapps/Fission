@@ -11,11 +11,11 @@ public func <^> <T, U, C: CollectionType where C.Generator.Element == T>(@noesca
 }
 
 extension CollectionType {
-    func apply<T>(transforms: [Self.Generator.Element -> T]) -> [T] {
+    func apply<T> (transforms: [Self.Generator.Element -> T]) -> [T] {
         return transforms.flatMap { return self.map($0) }
     }
 }
 
-public func <*><T, U: CollectionType>(transforms: [U.Generator.Element -> T], collection: U) -> [T] {
+public func <*> <T, U: CollectionType> (transforms: [U.Generator.Element -> T], collection: U) -> [T] {
     return collection.apply <| transforms
 }

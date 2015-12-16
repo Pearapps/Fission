@@ -10,6 +10,6 @@ public func |> <T, U> (lhs: T, @noescape transform: T -> U) -> U {
     return transform(lhs)
 }
 
-public func <| <T, U> (@noescape transform: T -> U, rhs: T) -> U {
+public func <| <T, U> (transform: T -> U, rhs: T) -> U {
     return transform(rhs)
 }
