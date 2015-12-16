@@ -30,6 +30,6 @@ public func applied<T, U> (transform: inout T -> U -> ()) -> T -> U -> T {
  
  - returns: A function that returns
  */
-public func <-><T, U>(f: inout T -> U -> (), t: T) -> U -> T {
+public func <-><T, U> (f: inout T -> U -> (), t: T) -> U -> T {
     return t |> (applied <| f)
 }

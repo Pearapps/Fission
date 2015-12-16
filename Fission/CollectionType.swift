@@ -20,6 +20,6 @@ public func <*> <T, U: CollectionType> (transforms: [U.Generator.Element -> T], 
     return collection.apply <| transforms
 }
 
-public func <^> <T, U, C: CollectionType where C.Generator.Element == T>(@noescape transform: T throws -> U, collection: C) rethrows -> [U] {
+public func <^> <T, U, C: CollectionType where C.Generator.Element == T> (@noescape transform: T throws -> U, collection: C) rethrows -> [U] {
     return try collection.map(transform)
 }
