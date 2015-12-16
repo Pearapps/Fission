@@ -11,6 +11,11 @@ infix operator <^> {
     precedence 130
 }
 
+infix operator <-> {
+    associativity right
+    precedence 170
+}
+
 infix operator <*> {
     associativity left
     precedence 130
@@ -18,7 +23,7 @@ infix operator <*> {
 
 infix operator -<< {
     associativity right
-    precedence 100
+    precedence 110
 }
 
 infix operator >>- {
@@ -45,4 +50,3 @@ infix operator <<< {
     associativity right
     precedence 175
 }
-

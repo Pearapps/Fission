@@ -57,7 +57,7 @@ public extension Optional {
      
      - returns: If `self` or the transform function are `nil` this returns `nil`. Returns an optional type `T`.
      */
-    func apply<T> (transform: (Wrapped -> T)?) -> T? {
+    public func apply<T> (transform: (Wrapped -> T)?) -> T? {
         return transform.flatMap {
             self.map($0)
         }

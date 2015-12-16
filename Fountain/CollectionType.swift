@@ -6,10 +6,14 @@
 //  Copyright © 2015 Kenneth Ackerson. All rights reserved.
 //
 
-extension CollectionType {
-    func apply<T> (transforms: [Self.Generator.Element -> T]) -> [T] {
+public extension CollectionType {
+    public func apply<T> (transforms: [Self.Generator.Element -> T]) -> [T] {
         return transforms.flatMap { return self.map($0) }
     }
+}
+
+public func compact<T, U: CollectionType where U.Generator.Element == T?> (collection: U) -> [T] {
+    return collection.flatMap { return $0 }
 }
 
 public func <*> <T, U: CollectionType> (transforms: [U.Generator.Element -> T], collection: U) -> [T] {
