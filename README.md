@@ -10,7 +10,7 @@ Operators for `flatMap` (`>>-`, `-<<`)
 
 Operator for `map` (`<^>`)
 
-Operators to pass a parameter into a function (`|>`, `<|`)
+Operators to apply a function to a parameter (`|>`, `<|`)
 
 Functions `curry` and `uncurry`.
 
@@ -20,7 +20,7 @@ Function `apply` and an operator for it `<*>`.
 
 ## Usage Examples
 
-### `|>` and `<|` / the Function application operators
+### `|>` and `<|` - the function application operators
 
 Consider a line of code like this: 
 
@@ -46,9 +46,7 @@ If you wanted to partially apply this for any reason (maybe you want to pass a f
 
 `let curriedAddition = curry(add)(4.0)`
 
-and lets say you called this
-
-`curriedAddition(3.0)` - the result will be `7.0`
+and you called the function with 3.0 `curriedAddition(3.0)` - the result will be `7.0`
 
 `uncurry` works in the opposite way, so if you did `uncurry(curry(add))` - you end up with a function with the same signature as the original `add` function.
 
