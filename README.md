@@ -1,6 +1,6 @@
 # Fission
 
-A collection of functions and custom operators for function composition, function application, monadic functions, and some other helpful things.
+A collection of functions and custom operators for function composition, function application, the monadic functions, and some other helpful things.
 
 Mostly an attempt to consolidate my most used ones into one place that has all of these things, as well as provide more flexibility than similiar frameworks.
 
