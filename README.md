@@ -36,6 +36,14 @@ This makes it clear, from left to right, how your data is flowing.
 
 `<|` can be used the same way, except from right to left.
 
+### `<^>` - the `map` operator
+
+The `<^>` is an operator that just calls through to `map` on either `Optional` or `CollectionType`.
+
+For example:
+
+`let integers = toInt <^> ["1", "2"]`
+
 ### `compact`
 
 Let's say you have a collection (lets say `Array` for now) that contains optionals (so they type signature is something like `Array<String?>` - `compact` is a function that can convert that array into something of type `Array<String>` as such:
