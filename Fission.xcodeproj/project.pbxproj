@@ -41,7 +41,7 @@
 
 /* Begin PBXFileReference section */
 		B93D3C4B1C1FD5F200557F6F /* FissionMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FissionMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B93D3C7E1C20F42D00557F6F /* FissionMac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FissionMac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B93D3C7E1C20F42D00557F6F /* FissioniOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FissioniOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B98C47A71C21248B003F157C /* CollectionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionType.swift; sourceTree = "<group>"; };
 		B98C47A81C21248B003F157C /* Curry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Curry.swift; sourceTree = "<group>"; };
 		B98C47A91C21248B003F157C /* FunctionApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FunctionApplication.swift; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				B93D3C4B1C1FD5F200557F6F /* FissionMac.framework */,
-				B93D3C7E1C20F42D00557F6F /* FissionMac.framework */,
+				B93D3C7E1C20F42D00557F6F /* FissioniOS.framework */,
 				B9E527791C211B8E00011F20 /* FissionMacTests.xctest */,
 			);
 			name = Products;
@@ -191,7 +191,7 @@
 			);
 			name = FissioniOS;
 			productName = "Fountain-iOS";
-			productReference = B93D3C7E1C20F42D00557F6F /* FissionMac.framework */;
+			productReference = B93D3C7E1C20F42D00557F6F /* FissioniOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B9E527781C211B8E00011F20 /* FissionMacTests */ = {
@@ -464,7 +464,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pear.Fission;
-				PRODUCT_NAME = FissionMac;
+				PRODUCT_NAME = FissioniOS;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -484,7 +484,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pear.Fission;
-				PRODUCT_NAME = FissionMac;
+				PRODUCT_NAME = FissioniOS;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
