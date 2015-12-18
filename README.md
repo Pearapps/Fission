@@ -1,6 +1,6 @@
 # Fission
 
-A collection of functions and custom operators for function composition, function application, monadic functions, and some other helpful things.
+A collection of functions and custom operators for function composition, function application, the monadic functions, and some other helpful things.
 
 Mostly an attempt to consolidate my most used ones into one place that has all of these things, as well as provide more flexibility than similiar frameworks.
 
@@ -35,6 +35,14 @@ It can be pretty hard to see in what way the data is flowing or to reason about 
 This makes it clear, from left to right, how your data is flowing.
 
 `<|` can be used the same way, except from right to left.
+
+### `<^>` - the `map` operator
+
+The `<^>` is an operator that just calls through to `map` on either `Optional` or `CollectionType`.
+
+For example:
+
+`let integers = toInt <^> ["1", "2"]`
 
 ### `compact`
 
