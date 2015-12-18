@@ -42,13 +42,13 @@ The `<^>` is an operator that just calls through to `map` on either `Optional` o
 
 For example:
 
-##### Optional
+##### `Optional`
 ```
 let optionalInt: Int? = ...
 let mapped: String? = String.init <^> optionalInt
 ```
 
-##### CollectionType
+##### `CollectionType`
 
 `let integers = toInt <^> ["1", "2"]`
 
@@ -57,6 +57,18 @@ let mapped: String? = String.init <^> optionalInt
 Let's say you have a collection (lets say `Array` for now) that contains optionals (so they type signature is something like `Array<String?>` - `compact` is a function that can convert that array into something of type `Array<String>` as such:
 
 `let array = ["Swift", Optional<String>.None, "Kenny"]` which is of type `Array<String?>` - you can easily remove the optionals like so with Fission's `compact` function; `compact(array)`.
+
+### `-<<` and `>>-`
+
+Calls through to `flatMap` on `Optional` or `SequenceType`
+
+##### `Optional`
+
+```
+let string: String? = ...
+let flatMapped: Int? = string >>- toInt
+```
+
 
 ### `curry`
 
