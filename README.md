@@ -68,7 +68,7 @@ Calls through to `flatMap` on `Optional` or `SequenceType`
 let string: String? = ...
 let flatMapped: Int? = string >>- toInt
 ```
-
+or `let flatMapped: Int? = toInt -<< string`
 
 ### `curry`
 
