@@ -42,6 +42,14 @@ The `<^>` is an operator that just calls through to `map` on either `Optional` o
 
 For example:
 
+##### Optional
+```
+let optionalInt: Int? = ...
+let mapped: String? = String.init <^> optionalInt
+```
+
+##### CollectionType
+
 `let integers = toInt <^> ["1", "2"]`
 
 ### `compact`
