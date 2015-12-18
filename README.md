@@ -90,6 +90,14 @@ and you called the function with 3.0 `curriedAddition(3.0)` - the result will be
 
 `uncurry` works in the opposite way, so if you did `uncurry(curry(add))` - you end up with a function with the same signature as the original `add` function.
 
+### `Apply`
+
+A simple example using `Apply` is as follows:
+
+`let splitCharacters = ["me", "file"].apply([{ return $0.characters.sort() }])`
+
+`splitCharacters`'s value is `[["e", "m"], ["e", "f", "i", "l"]]` - which is one array of characters per string in the original Array, in an array.
+
 ### `applied` and `<->`
 
 Since `mutating func`s do not have a return value (they return `Void`) - you must bind to a `var` like so:
