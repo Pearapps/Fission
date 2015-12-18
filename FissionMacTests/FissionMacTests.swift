@@ -72,4 +72,10 @@ final class FissionMacTests: XCTestCase {
         XCTAssert(m("hi") == 6)
     }
     
+    func testCompact() {
+        let array = ["it", Optional<String>.None, "me"]
+        let compacted = array |> compact
+        XCTAssert(compacted.count == 2)
+    }
+    
 }

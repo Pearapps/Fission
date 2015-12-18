@@ -10,6 +10,10 @@ public func >>- <T, S: SequenceType, U: SequenceType where U.Generator.Element =
     return try sequence.flatMap(transform)
 }
 
+public func compact<T, U: SequenceType where U.Generator.Element == T?> (sequence: U) -> [T] {
+    return sequence.flatMap { return $0 }
+}
+
 public func -<< <T, S: SequenceType, U: SequenceType where U.Generator.Element == T> (transform: T throws -> S, sequence: U) rethrows -> [S.Generator.Element] {
     return try sequence.flatMap(transform)
 }
