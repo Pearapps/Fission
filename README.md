@@ -58,7 +58,7 @@ Let's say you have a collection (lets say `Array` for now) that contains optiona
 
 `let array = ["Swift", Optional<String>.None, "Kenny"]` which is of type `Array<String?>` - you can easily remove the optionals like so with Fission's `compact` function; `compact(array)`.
 
-### `-<<` and `>>-`
+### `-<<` and `>>-` - the `flatMap` operators
 
 Calls through to `flatMap` on `Optional` or `SequenceType`
 
@@ -74,7 +74,7 @@ or `let flatMapped: Int? = toInt -<< string`
 
 `let allCharaters: [Character] = characters -<< ["hello", "my", "friend"] // returns an array of every character in all the strings`
 
-### `curry`
+### `curry` and `uncurry`
 
 `curry` transforms a function that takes two arguments into a function that returns another function - both of which take one argument.
 
@@ -90,7 +90,7 @@ and you called the function with 3.0 `curriedAddition(3.0)` - the result will be
 
 `uncurry` works in the opposite way, so if you did `uncurry(curry(add))` - you end up with a function with the same signature as the original `add` function.
 
-### `applied`
+### `applied` and `<->`
 
 Since `mutating func`s do not have a return value (they return `Void`) - you must bind to a `var` like so:
 
