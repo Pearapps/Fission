@@ -83,6 +83,14 @@ Or, using the operator `<->` (and `<|`)
 
 `let both = Array.appendContentsOf <-> ["First"] <| ["Second"]`
 
+## Integration
+
+#### Cocoapods:
+
+You must have `use_frameworks!` at the beginning of your podfile.
+
+Add `pod 'Fission'` to your podfile.
+
 ## Next steps:
 
 1. Better tests (the current ones are not good)
