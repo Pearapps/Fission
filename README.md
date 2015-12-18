@@ -2,7 +2,7 @@
 
 A collection of functions and custom operators for function composition, function application, the monadic functions, and some other helpful things.
 
-Mostly an attempt to consolidate my most used ones into one place that has all of these things, as well as provide more flexibility than similiar frameworks.
+Mostly an attempt to consolidate my most used/useful functions/operators into one place that has all of these things, as well as provide more flexibility than similiar frameworks.
 
 ## What is included:
 
@@ -69,6 +69,10 @@ let string: String? = ...
 let flatMapped: Int? = string >>- toInt
 ```
 or `let flatMapped: Int? = toInt -<< string`
+
+##### `SequenceType`
+
+`let allCharaters: [Character] = characters -<< ["hello", "my", "friend"] // returns an array of every character in all the strings`
 
 ### `curry`
 
