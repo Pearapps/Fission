@@ -42,6 +42,14 @@ The `<^>` is an operator that just calls through to `map` on either `Optional` o
 
 For example:
 
+##### `Optional`
+```
+let optionalInt: Int? = ...
+let mapped: String? = String.init <^> optionalInt
+```
+
+##### `CollectionType`
+
 `let integers = toInt <^> ["1", "2"]`
 
 ### `compact`
@@ -49,6 +57,18 @@ For example:
 Let's say you have a collection (lets say `Array` for now) that contains optionals (so they type signature is something like `Array<String?>` - `compact` is a function that can convert that array into something of type `Array<String>` as such:
 
 `let array = ["Swift", Optional<String>.None, "Kenny"]` which is of type `Array<String?>` - you can easily remove the optionals like so with Fission's `compact` function; `compact(array)`.
+
+### `-<<` and `>>-`
+
+Calls through to `flatMap` on `Optional` or `SequenceType`
+
+##### `Optional`
+
+```
+let string: String? = ...
+let flatMapped: Int? = string >>- toInt
+```
+
 
 ### `curry`
 
@@ -82,6 +102,14 @@ A lot of the time, you just want to bind the mutation to a `let` variable in one
 Or, using the operator `<->` (and `<|`)
 
 `let both = Array.appendContentsOf <-> ["First"] <| ["Second"]`
+
+## Integration
+
+#### Cocoapods:
+
+You must have `use_frameworks!` at the beginning of your podfile.
+
+Add `pod 'Fission'` to your podfile.
 
 ## Next steps:
 
