@@ -7,7 +7,7 @@
 //
 
 import XCTest
-import FissionMac
+import Fission
 
 final class FissionMacTests: XCTestCase {
     
