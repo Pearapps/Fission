@@ -12,10 +12,6 @@ public extension CollectionType {
     }
 }
 
-public func compact<T, U: CollectionType where U.Generator.Element == T?> (collection: U) -> [T] {
-    return collection.flatMap { return $0 }
-}
-
 public func <*> <T, U: CollectionType> (transforms: [U.Generator.Element -> T], collection: U) -> [T] {
     return collection.apply <| transforms
 }

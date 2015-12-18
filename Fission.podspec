@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name         = "Fission"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "A collection of functions and custom operators."
   s.description  = <<-DESC
-  "A collection of functions and custom operators for function composition, data piping, monadic functions, and some other helpful things."
+  "A collection of functions and custom operators for function composition, function application, the monadic functions, and some other helpful things."
                    DESC
   s.homepage     = "https://github.com/Pearapps/Fission"
   s.license      = { :type => "Apache", :file => "License" }
