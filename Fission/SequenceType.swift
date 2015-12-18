@@ -10,6 +10,13 @@ public func >>- <T, S: SequenceType, U: SequenceType where U.Generator.Element =
     return try sequence.flatMap(transform)
 }
 
+/**
+ Removes any optionals in a sequence.
+ 
+ - parameter sequence: The sequence to remove optionals from.
+ 
+ - returns: An array without optionals inside of it.
+ */
 public func compact<T, U: SequenceType where U.Generator.Element == T?> (sequence: U) -> [T] {
     return sequence.flatMap { return $0 }
 }
