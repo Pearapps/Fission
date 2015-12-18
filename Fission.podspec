@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.social_media_url = "http://twitter.com/pearapps"
   s.ios.deployment_target = "8.0"
   s.osx.deployment_target = "10.11"
-  s.source = { :git => "https://github.com/Pearapps/Fission.git", :tag => "0.0.2" }
+  s.source = { :git => "https://github.com/Pearapps/Fission.git", :tag => "0.0.3" }
   s.source_files  = "Files", "Fission/**/*.{swift}"
   s.requires_arc = true
 end
