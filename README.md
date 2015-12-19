@@ -126,7 +126,6 @@ Add `pod 'Fission'` to your podfile.
 ## Next steps:
 
 1. Better tests (the current ones are not good)
-2. A better README (documentation ?)
-3. Complete header docs 
-4. Carthage support
+2. Complete header docs 
+3. Carthage support
 
