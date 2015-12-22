@@ -16,7 +16,7 @@ Functions `curry` and `uncurry`.
 
 Function `compact`.
 
-Function `apply` and an operators for each version included `<*>`, and `<->`. 
+Functions `apply` and operators for each version included `<*>`, and `<->`. 
 
 ## Usage Examples
 
