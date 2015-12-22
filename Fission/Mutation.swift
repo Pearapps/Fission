@@ -7,7 +7,7 @@
 //
 
 /// Based on https://twitter.com/jckarter/status/675445367542968320
-public func applied<T, U> (transform: inout T -> U -> ()) -> T -> U -> T {
+public func apply<T, U> (transform: inout T -> U -> ()) -> T -> U -> T {
     return { a in
         { b in
             var mutable = a
@@ -31,5 +31,5 @@ public func applied<T, U> (transform: inout T -> U -> ()) -> T -> U -> T {
  - returns: A function that returns a function that can tranform `U` to `T`.
  */
 public func <-><T, U> (f: inout T -> U -> (), t: T) -> U -> T {
-    return t |> (applied <| f)
+    return t |> (apply <| f)
 }

@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "B93D3C7D1C20F42D00557F6F"
-               BuildableName = "FissioniOS.framework"
+               BuildableName = "Fission.framework"
                BlueprintName = "FissioniOS"
                ReferencedContainer = "container:Fission.xcodeproj">
             </BuildableReference>
@@ -46,7 +46,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B93D3C7D1C20F42D00557F6F"
-            BuildableName = "FissioniOS.framework"
+            BuildableName = "Fission.framework"
             BlueprintName = "FissioniOS"
             ReferencedContainer = "container:Fission.xcodeproj">
          </BuildableReference>
@@ -64,7 +64,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "B93D3C7D1C20F42D00557F6F"
-            BuildableName = "FissioniOS.framework"
+            BuildableName = "Fission.framework"
             BlueprintName = "FissioniOS"
             ReferencedContainer = "container:Fission.xcodeproj">
          </BuildableReference>
