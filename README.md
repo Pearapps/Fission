@@ -16,9 +16,7 @@ Functions `curry` and `uncurry`.
 
 Function `compact`.
 
-Function `applied` and an operator that uses it `<->`.
-
-Function `apply` and an operator for it `<*>`. 
+Function `apply` and an operators for each version included `<*>`, and `<->`. 
 
 ## Usage Examples
 
@@ -90,26 +88,24 @@ and you called the function with 3.0 `curriedAddition(3.0)` - the result will be
 
 `uncurry` works in the opposite way, so if you did `uncurry(curry(add))` - you end up with a function with the same signature as the original `add` function.
 
-### `Apply`
+### `apply`
 
-A simple example using `Apply` is as follows:
+A simple example using `apply` is as follows:
 
 `let splitCharacters = ["me", "file"].apply([{ return $0.characters.sort() }])`
 
 `splitCharacters`'s value is `[["e", "m"], ["e", "f", "i", "l"]]` - which is one array of characters per string in the original Array, in an array.
 
-### `applied` and `<->`
-
-Since `mutating func`s do not have a return value (they return `Void`) - you must bind to a `var` like so:
+Another version of `apply` is included, that works on functions that take an `inout` parameter, and return a function that does not and returns a value. For example: since `mutating func`s do not have a return value (they return `Void`) - you must bind to a `var` like so:
 
 ```swift
 var first = ["First"] 
 first.appendContentsOf(["Second"])
 ```
       
-A lot of the time, you just want to bind the mutation to a `let` variable in one statement, which is the problem `applied` solves. The example above can be written as so using Fission:
+A lot of the time, you just want to bind the mutation to a `let` variable in one statement, which is the problem the version of `apply` solves. The example above can be written as so using Fission:
 
-`let both = applied(Array.appendContentsOf)(["First"])(["Second"])`
+`let both = apply(Array.appendContentsOf)(["First"])(["Second"])`
 
 Or, using the operator `<->` (and `<|`)
 
@@ -128,4 +124,3 @@ Add `pod 'Fission'` to your podfile.
 1. Better tests (the current ones are not good)
 2. Complete header docs 
 3. Carthage support
-
