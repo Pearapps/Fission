@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Fission"
-  s.version      = "0.0.5"
+  s.version      = "0.1"
   s.summary      = "A collection of functions and custom operators."
   s.description  = <<-DESC
   "A collection of functions and custom operators for function composition, function application, the monadic functions, and some other helpful things."
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.social_media_url = "http://twitter.com/pearapps"
   s.ios.deployment_target = "8.0"
   s.osx.deployment_target = "10.11"
-  s.source = { :git => "https://github.com/Pearapps/Fission.git", :tag => "0.0.5" }
+  s.source = { :git => "https://github.com/Pearapps/Fission.git", :tag => "0.1" }
   s.source_files  = "Files", "Fission/**/*.{swift}"
   s.requires_arc = true
 end
