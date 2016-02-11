@@ -113,7 +113,7 @@ Or, using the operator `<->` (and `<|`)
 
 ## Integration
 
-#### Cocoapods:
+#### CocoaPods:
 
 You must have `use_frameworks!` at the beginning of your podfile.
 
