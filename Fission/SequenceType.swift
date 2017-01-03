@@ -6,7 +6,7 @@
 //  Copyright © 2015 Kenneth Ackerson. All rights reserved.
 //
 
-public func >>- <T, S: SequenceType, U: SequenceType where U.Generator.Element == T> (sequence: U, transform: T throws -> S) rethrows -> [S.Generator.Element] {
+public func >>- <T, S: Sequence, U: Sequence> (sequence: U, transform: (T) throws -> S) rethrows -> [S.Iterator.Element] where U.Iterator.Element == T {
     return try sequence.flatMap(transform)
 }
 
@@ -17,10 +17,10 @@ public func >>- <T, S: SequenceType, U: SequenceType where U.Generator.Element =
  
  - returns: An array without optionals inside of it.
  */
-public func compact<T, U: SequenceType where U.Generator.Element == T?> (sequence: U) -> [T] {
+public func compact<T, U: Sequence> (_ sequence: U) -> [T] where U.Iterator.Element == T? {
     return sequence.flatMap { return $0 }
 }
 
-public func -<< <T, S: SequenceType, U: SequenceType where U.Generator.Element == T> (transform: T throws -> S, sequence: U) rethrows -> [S.Generator.Element] {
+public func -<< <T, S: Sequence, U: Sequence> (transform: (T) throws -> S, sequence: U) rethrows -> [S.Iterator.Element] where U.Iterator.Element == T {
     return try sequence.flatMap(transform)
 }

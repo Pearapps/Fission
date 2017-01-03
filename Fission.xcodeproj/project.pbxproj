@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B92E5B111DEA3D04008F5F32 /* PrcendenceGroups.swift in Sources */ = {isa = PBXBuildFile; fileRef = B92E5B101DEA3D04008F5F32 /* PrcendenceGroups.swift */; };
 		B98C47AF1C21248B003F157C /* CollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98C47A71C21248B003F157C /* CollectionType.swift */; };
 		B98C47B01C21248B003F157C /* CollectionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98C47A71C21248B003F157C /* CollectionType.swift */; };
 		B98C47B11C21248B003F157C /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = B98C47A81C21248B003F157C /* Curry.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B92E5B101DEA3D04008F5F32 /* PrcendenceGroups.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrcendenceGroups.swift; sourceTree = "<group>"; };
 		B93D3C4B1C1FD5F200557F6F /* Fission.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fission.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B93D3C7E1C20F42D00557F6F /* Fission.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fission.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B98C47A71C21248B003F157C /* CollectionType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionType.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				B98C47AA1C21248B003F157C /* FunctionComposition.swift */,
 				B98C47AB1C21248B003F157C /* Mutation.swift */,
 				B98C47AC1C21248B003F157C /* Operators.swift */,
+				B92E5B101DEA3D04008F5F32 /* PrcendenceGroups.swift */,
 				B98C47AD1C21248B003F157C /* Optional.swift */,
 				B98C47AE1C21248B003F157C /* SequenceType.swift */,
 			);
@@ -224,12 +227,14 @@
 				TargetAttributes = {
 					B93D3C4A1C1FD5F200557F6F = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0810;
 					};
 					B93D3C7D1C20F42D00557F6F = {
 						CreatedOnToolsVersion = 7.2;
 					};
 					B9E527781C211B8E00011F20 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -283,6 +288,7 @@
 			files = (
 				B98C47BD1C21248B003F157C /* SequenceType.swift in Sources */,
 				B98C47B31C21248B003F157C /* FunctionApplication.swift in Sources */,
+				B92E5B111DEA3D04008F5F32 /* PrcendenceGroups.swift in Sources */,
 				B98C47AF1C21248B003F157C /* CollectionType.swift in Sources */,
 				B98C47B51C21248B003F157C /* FunctionComposition.swift in Sources */,
 				B98C47BB1C21248B003F157C /* Optional.swift in Sources */,
@@ -429,6 +435,7 @@
 				PRODUCT_NAME = Fission;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -448,6 +455,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = pear.Fission;
 				PRODUCT_NAME = Fission;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -500,6 +508,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pear.FissionMacTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -511,6 +520,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pear.FissionMacTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

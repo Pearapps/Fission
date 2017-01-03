@@ -6,47 +6,20 @@
 //  Copyright © 2015 Kenneth Ackerson. All rights reserved.
 //
 
-infix operator <^> {
-    associativity left
-    precedence 130
-}
+infix operator <^> : LeftDefaultMonadicFunctions
 
-infix operator <-> {
-    associativity right
-    precedence 170
-}
+infix operator <-> : RightDefaultMonadicFunctions
 
-infix operator <*> {
-    associativity left
-    precedence 130
-}
+infix operator <*> : LeftDefaultMonadicFunctions
 
-infix operator -<< {
-    associativity right
-    precedence 110
-}
+infix operator -<< : RightDefaultMonadicFunctions
 
-infix operator >>- {
-    associativity left
-    precedence 110
-}
+infix operator >>- : LeftDefaultMonadicFunctions
 
-infix operator |> {
-    associativity left
-    precedence 95
-}
+infix operator |> : ApplicationLeft
 
-infix operator <| {
-    associativity left
-    precedence 95
-}
+infix operator <| : ApplicationRight
 
-infix operator >>> {
-    associativity right
-    precedence 175
-}
+infix operator >>> : RightDefaultMonadicFunctions
 
-infix operator <<< {
-    associativity right
-    precedence 175
-}
+infix operator <<< : RightDefaultMonadicFunctions

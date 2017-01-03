@@ -13,7 +13,7 @@ Transforms a function with two arguments into two functions with one argument ea
 
 - returns: A curried version of the provided function.
 */
-public func curry<T, U, V> (f: (T, U) -> V) -> T -> U -> V {
+public func curry<T, U, V> (_ f: @escaping (T, U) -> V) -> (T) -> (U) -> V {
     return { x in
         return {
             return f <| (x, $0)
@@ -28,7 +28,7 @@ public func curry<T, U, V> (f: (T, U) -> V) -> T -> U -> V {
  
  - returns: An uncurried version of the provided function.
  */
-public func uncurry<T, U, V> (f: T -> U -> V) -> (T, U) -> V {
+public func uncurry<T, U, V> (_ f: @escaping (T) -> (U) -> V) -> (T, U) -> V {
     return {
         return f <| $0 <| $1
     }
