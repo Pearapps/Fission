@@ -14,7 +14,7 @@ final class FissionMacTests: XCTestCase {
     func testMap() {
         let array = ["1", "2"]
         
-        func function(string: String) -> Int? {
+        func function(_ string: String) -> Int? {
             return Int(string)
         }
         
@@ -29,7 +29,7 @@ final class FissionMacTests: XCTestCase {
         
         let array = ["1", "2"]
         
-        func function(string: String) -> [String] {
+        func function(_ string: String) -> [String] {
             return [string]
         }
         
@@ -41,7 +41,7 @@ final class FissionMacTests: XCTestCase {
     }
     
     func testFunctionApplication() {
-        func function(string: String) -> Int {
+        func function(_ string: String) -> Int {
             return 22
         }
         
@@ -49,8 +49,21 @@ final class FissionMacTests: XCTestCase {
         XCTAssert(result == 22)
     }
     
+    func testMultipleFunctionApplication() {
+        func function(_ string: String) -> Int {
+            return 22
+        }
+        
+        func otherFunction(integer: Int) -> Int {
+            return integer + 5
+        }
+        
+        let result = "hello" |> function |> otherFunction
+        XCTAssert(result == 27)
+    }
+    
     func testFunctionApplicationTwo() {
-        func function(string: String) -> Int {
+        func function(_ string: String) -> Int {
             return 22
         }
         
@@ -59,21 +72,21 @@ final class FissionMacTests: XCTestCase {
     }
     
     func testFunctionComposition() {
-        func timesThree(amount: Int) -> Int {
+        func timesThree(_ amount: Int) -> Int {
             return amount * 3
         }
         
-        func count(string: String) -> Int {
+        func count(_ string: String) -> Int {
             return string.characters.count
         }
         
-        let m = count >>> timesThree >>> { return [$0] } >>> { return $0.reduce(0, combine: +) }
+        let m = count >>> timesThree >>> { return [$0] } >>> { return $0.reduce(0, +) }
         
         XCTAssert(m("hi") == 6)
     }
     
     func testCompact() {
-        let array = ["it", Optional<String>.None, "me"]
+        let array = ["it", Optional<String>.none, "me"]
         let compacted = array |> compact
         XCTAssert(compacted.count == 2)
     }

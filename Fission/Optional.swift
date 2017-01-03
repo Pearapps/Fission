@@ -16,7 +16,7 @@
 
 - returns: `nil` if `self` is nil, `f(self!)` otherwise.
 */
-public func >>- <T, U> (optional: T?, @noescape transform: T throws -> U?) rethrows -> U? {
+public func >>- <T, U> (optional: T?, transform: (T) throws -> U?) rethrows -> U? {
     return try optional.flatMap(transform)
 }
 
@@ -30,7 +30,7 @@ public func >>- <T, U> (optional: T?, @noescape transform: T throws -> U?) rethr
  
  - returns: `nil` if `self` is nil, `f(self!)` otherwise.
  */
-public func -<< <T, U> (@noescape transform: T throws -> U?, optional: T?) rethrows -> U? {
+public func -<< <T, U> (transform: (T) throws -> U?, optional: T?) rethrows -> U? {
     return try optional.flatMap(transform)
 }
 
@@ -44,7 +44,7 @@ public func -<< <T, U> (@noescape transform: T throws -> U?, optional: T?) rethr
  
  - returns: `nil` if `self == nil`. Otherwise, returns `f(self!)`.
  */
-public func <^> <T, U> (@noescape transform: T throws -> U, optional: T?) rethrows -> U? {
+public func <^> <T, U> (transform: (T) throws -> U, optional: T?) rethrows -> U? {
     return try optional.map(transform)
 }
 
@@ -57,7 +57,7 @@ public extension Optional {
      
      - returns: If `self` or the transform function are `nil` this returns `nil`. Returns an optional type `T`.
      */
-    public func apply<T> (transform: (Wrapped -> T)?) -> T? {
+    public func apply<T> (_ transform: ((Wrapped) -> T)?) -> T? {
         return transform.flatMap {
             self.map($0)
         }
@@ -72,6 +72,6 @@ public extension Optional {
  
  - returns: If `self` or the transform function are `nil` this returns `nil`. Returns an optional type `U`.
  */
-public func <*><T, U> (transform: (T -> U)?, optional: T?) -> U? {
+public func <*><T, U> (transform: ((T) -> U)?, optional: T?) -> U? {
     return optional.apply <| transform
 }
